@@ -2,7 +2,6 @@
 if(env('APP_ENV')=='production') {
     URL::forceScheme('https');
 }
-use App\Events\Event;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -18,7 +17,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/pusher', function () {
-    event(new Event('Hola mundo'));
+    event(new \App\Events\Event('Hola mundo'));
     return 'ok';
 });
 
