@@ -32,10 +32,10 @@ class Event implements ShouldBroadcast
      */
     public function broadcastOn()
     {
-        return new PrivateChannel('canal');
+        return new Channel('canal');
     }
     public function broadcastAs()
     {
-        return new PrivateChannel('evento');
+        return new 'evento';
     }
 }

@@ -1,5 +1,5 @@
 <?php
-if(Request::isSecure()) {
+if(env('APP_ENV')=='production') {
     URL::forceScheme('https');
 }
 use App\Events\Event;
@@ -19,6 +19,7 @@ Route::get('/', function () {
 });
 Route::get('/pusher', function () {
     event(new Event('Hola mundo'));
+    return 'ok';
 });
 
 Auth::routes();
