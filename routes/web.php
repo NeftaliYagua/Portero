@@ -1,5 +1,5 @@
 <?php
-if(env('APP_ENV')=='production') {
+if(Request::isSecure()) {
     URL::forceScheme('https');
 }
 use App\Events\Event;
