@@ -36,6 +36,6 @@ class Event implements ShouldBroadcast
     }
     public function broadcastAs()
     {
-        return new 'evento';
+        return 'evento';
     }
 }
