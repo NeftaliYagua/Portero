@@ -69,9 +69,11 @@
                 bottom: 0;
                 position:absolute;
                 z-index: 1000;
+            }
+            #pi a {
+                display:block;
                 text-decoration: none;
                 color:#C0C0C0;
-                display:block;
             }
         </style>
     </head>
