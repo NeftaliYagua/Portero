@@ -63,12 +63,15 @@
                 margin-bottom: 30px;
             }
             #pi {
-                margin-bottom: 30px;
-                margin-right: 30px;
+                margin-bottom: 10px;
+                margin-right: 10px;
                 right: 0;
                 bottom: 0;
                 position:absolute;
                 z-index: 1000;
+                text-decoration: none;
+                color:#C0C0C0;
+                display:block;
             }
         </style>
     </head>
