@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="{{ app()->getLocale() }}">
     <head>
         <meta charset="utf-8">
@@ -62,6 +62,14 @@
             .m-b-md {
                 margin-bottom: 30px;
             }
+            #pi {
+                margin-bottom: 30px;
+                margin-right: 30px;
+                right: 0;
+                bottom: 0;
+                position:absolute;
+                z-index: 1000;
+            }
         </style>
     </head>
     <body>
@@ -82,14 +90,11 @@
                     Portero
                 </div>
 
-                <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                <div class="content-body">
+                  Sistema nacional de Identificación
                 </div>
             </div>
         </div>
+	<div id="pi"><a href="/admin/">π</a></div>
     </body>
 </html>
