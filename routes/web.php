@@ -1,6 +1,6 @@
 <?php
 //if(env('APP_ENV')=='production') {
-//    URL::forceScheme('https');
+URL::forceScheme('https');
 //}
 /*
 |--------------------------------------------------------------------------
@@ -13,14 +13,10 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-})->middleware('auth');
+Route::get('/', 'HomeController@index')->name('home');
 Route::get('/pusher', function () {
     event(new \App\Events\Event('Hola mundo'));
     return 'ok';
 });
-
 Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', 'HomeController@home')->name('home');
