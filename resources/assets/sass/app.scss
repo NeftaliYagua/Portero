@@ -9,6 +9,20 @@
 @import '~bootstrap/scss/bootstrap';
 
 .navbar-laravel {
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+#pi {
+    margin-bottom: 10px;
+    margin-right: 10px;
+    right: 0;
+    bottom: 0;
+    position:absolute;
+    z-index: 1000;
+}
+#pi a {
+    display:block;
+    text-decoration: none;
+    color:#C0C0C0;
 }
