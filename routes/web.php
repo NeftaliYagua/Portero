@@ -1,7 +1,7 @@
 <?php
-if(env('APP_ENV')=='production') {
-    URL::forceScheme('https');
-}
+//if(env('APP_ENV')=='production') {
+//    URL::forceScheme('https');
+//}
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,7 +15,7 @@ if(env('APP_ENV')=='production') {
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->middleware('auth');
 Route::get('/pusher', function () {
     event(new \App\Events\Event('Hola mundo'));
     return 'ok';
