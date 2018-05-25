@@ -9,7 +9,12 @@
 @import "~bootswatch/dist/simplex/bootswatch";
 // Bootstrap
 //@import '~bootstrap/scss/bootstrap';
-
+body{
+    background: url(/img/fondo.jpg);
+}
+main.contenido{
+    background: url(/img/secure.jpg) no-repeat 100% center top;
+}
 .navbar-laravel {
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
